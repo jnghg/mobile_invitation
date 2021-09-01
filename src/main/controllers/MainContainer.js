@@ -1,29 +1,23 @@
-import React from 'react';
-import { observer, inject } from 'mobx-react';
-import { autobind } from 'core-decorators';
-import MainView from '../views/MainView';
+import React from "react";
+import { observer, inject } from "mobx-react";
+import { autobind } from "core-decorators";
+import MainView from "../views/MainView";
 
-@inject('mainStore')
+@inject("mainStore")
 @observer
 @autobind
-
 class MainContaner extends React.Component {
+  componentDidMount() {}
 
-    componentDidMount() {
-        
-    }
-    
-    componentWillUnmount() {
+  componentWillUnmount() {}
 
-    }
-    
-    render() {
-        return (
-            <>
-                <MainView />
-            </>
-        )
-    }
+  render() {
+    return (
+      <>
+        <MainView />
+      </>
+    );
+  }
 }
 
 export default MainContaner;

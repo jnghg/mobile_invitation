@@ -1,10 +1,8 @@
-import React from 'react';
+import React from "react";
 
 class MainView extends React.PureComponent {
   render() {
-    return (
-      <p>Main Page</p>
-    );
+    return <p>자 이제 시작이야</p>;
   }
 }
 
